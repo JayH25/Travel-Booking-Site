@@ -3,6 +3,9 @@
     margin: 0rem;
     box-sizing: border-box;
 }
+/* header {
+    
+} */
 body {
     background-color: #47576a; 
     position: relative;
@@ -10,12 +13,22 @@ body {
     color: black;
     font-family: monospace;
     background-image: conic-gradient(from 0deg, orange, orangered, orange);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-color: orange;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-color: orange; */
+    position: relative;
 }
 
-  
+.transparent {
+    width: 1470px;
+    height: 700px;
+    background-color: transparent;
+    position: absolute;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.8) 100%),url(..//Netflix-Clone/images/bg.jpg);
+    z-index: 1.1;
+    top: 0rem;
+}
+
 header {
     width: 100%;
     height: 5rem;
@@ -23,38 +36,64 @@ header {
 main {
     width: 100%;
 }
-.logo img {
-    border-radius: 100%;
+.top{
     position: absolute;
-    left: 1rem;
-    top: 0rem;
-}
-                            /*  Top Panel */
-.top {
-    position: fixed;
-    width: 100%;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    z-index: 1.1;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 1rem;
+    border-bottom: 3px solid white;
+}
+.top li {
+    display: flex;
+    margin-right: 4rem;
+    justify-content: center;
     align-items: center;
-    height: 5rem;
-    z-index: 1;
-    background-color: rgb(20, 20, 20);
 }
-
-                    /* Login Button  */
-.login {
+.options ul{
+    display: flex;
+}
+.options ul li img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+}
+.options svg {
+    width: 32px;
+    height: 32px;
+}
+.train svg {
+    width: 45px;
+    height: 60px;
+    margin-top: 0rem;
+}
+li {
+    list-style-type: none;
+}
+svg marker {
+    color: white;
+}
+/* .login {
     margin-left: 54rem;
-
-}
+} */
+ .lang {
+    position: absolute;
+    right: 1rem;
+ }
+ .login {
+    position: absolute;
+    right: 11rem;
+ }
 .login button {
     outline: none;
     cursor: pointer;
     border: none;
     padding: 0.9rem 2rem;
     margin: 0;
-    font-family: inherit;
-    font-size: inherit;
     position: relative;
     display: inline-block;
     letter-spacing: 0.05rem;
@@ -64,19 +103,15 @@ main {
     overflow: hidden;
     background: #66ff66;
     color: ghostwhite;
-
 }
-
 .login button span {
     position: relative;
     z-index: 10;
     transition: color 0.4s;
 }
-
 .login button:hover span {
     color: black;
 }
-
 .login button::before,
 .login button::after {
     position: absolute;
@@ -86,7 +121,6 @@ main {
     height: 100%;
     z-index: 0;
 }
-
 .login button::before {
     content: "";
     background-color: rgb(3, 3, 208);
@@ -95,12 +129,10 @@ main {
     transform: skew(30deg);
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
-
 .login button:hover::before {
     transform: translate3d(100%, 0, 0);
 }
                        /* Language Button  */
-
 .lang button {
     outline: none;
     cursor: pointer;
@@ -118,19 +150,15 @@ main {
     overflow: hidden;
     background: #66ff66;
     color: ghostwhite;
-
 }
-
 .lang button span {
     position: relative;
     z-index: 10;
     transition: color 0.4s;
 }
-
 .lang button:hover span {
     color: black;
 }
-
 .lang button::before,
 .lang button::after {
     position: absolute;
@@ -140,7 +168,6 @@ main {
     height: 100%;
     z-index: 0;
 }
-
 .lang button::before {
     content: "";
     background-color: orange;
@@ -149,7 +176,6 @@ main {
     transform: skew(30deg);
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
-
 .lang button:hover::before {
     transform: translate3d(100%, 0, 0);
 }
@@ -163,91 +189,19 @@ main {
     color: black;
     background-color: rgb(24, 252, 176);
 }
- 
-
-        /* More options Button(3 lines) */
-.more {
-    background-color: rgb(20, 20, 20);
-    
-    border: none;
-    height: 100%;
-    width: 4rem;
+                /* fromTo Body  */
+ main {
     position: absolute;
-    top: 0rem;
-    right: 1rem;
-}
-
-.optionss {
-    width: 80%;
-    height: 30%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: center;
-    align-items: center;
-    
-}
-.optionss div {      
-    width: 2rem;
-    height: 3rem;
-    background-color: white;
-    border-radius: 30%;
-    padding: 0.1rem;
-    margin-bottom: 0.3rem;
-}
-
-
-
-                /* Train,bus,Flight Options */
-.Options {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    border-radius: 5px;
-}
-.bus {
-    
-    border-radius: 10px;
-    
-}
-.train {
-    
-    border-radius: 10px;
-}
-.flight {
-    
-    border-radius: 10px;
-}
-.Bus,.Train,.Flight {
-    border: 10 ps solid black;
-    margin-right: 5rem;
-    border-radius: 50%;
-    width: 65px;
-    height: 75px;
-}
-
-.Bus svg , .Train svg , .Flight svg {
-    width: 100px;
-    border-radius: 20%;
-    border: 1px solid black;
-    background-color: cyan;
-}
-
-.Bus {
-    margin-left: 5rem;
-}
-.Bus,.Train,.Flight {
-    width: 60px;
-    height: 70px;
-    padding: 0rem;
-}
-                        /* From and To Body */
-.fromTo {
+    z-index: 1.9;
+ }
+ .fromTo {
     margin-top: 0.2rem;
     width: 100%;
     height: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 .fa-solid {
     margin-top: 3.5rem;
@@ -278,14 +232,3 @@ select {
     height: 3rem;
     font-size: 1.2rem;
 }
-.options {
-    width: 60%;
-    height: 95px;
-    background-color:white;
-    display: flex;
-    border-radius: 20px;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;  
-}
-
