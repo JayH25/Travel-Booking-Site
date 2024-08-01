@@ -1,0 +1,87 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.background{
+    width:100vw;
+    height:450px;
+    /* background-image:url(./images/background.jpg); */
+    background-image: url("./Images/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#logo{
+    height:150px;
+    z-index: 2;
+}
+.box{
+    position: absolute;
+    top:0px;
+    right:0px;
+    left:0px;
+    width:100vw;
+    height:450px;
+    background: linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.3) 90%);
+}
+.nav{
+    height:80px;
+    background:transparent;
+
+}
+#logo{
+    margin-top: 0px;
+    margin-left:43%;
+    height:250px;
+}
+
+.fromto{
+    position:relative;
+    bottom:50px;
+    background-color: red;
+    height:120px;
+    width:60%;
+    left:20%;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border:2px solid rgb(212, 211, 211);
+    border-radius:8px;
+} 
+
+
+.fromto #from{
+    margin-left:19%;
+    margin-right:1%;
+}
+.fromto #to{
+    margin-right:19%;
+    margin-left:1%;
+}
+
+select{
+    color:black;
+    height:60%;
+    width: 350px;
+    text-align: center;
+    text-align-last: center;
+    border :2px solid rgb(212, 212, 212);
+    border-radius: 15px;
+}
+.fromto img{
+    
+    position:relative;
+    top:0px;
+    margin:0px;
+    padding:0px;
+}
+button{
+    color:azure;
+    position:relative;
+    bottom: 70px;
+    height:45px;
+    width:170px;
+    margin-left:46.5%;
+    background-color: rgb(37, 37, 37);
+    border-radius: 20px;
+}
