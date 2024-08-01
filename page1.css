@@ -1,234 +1,361 @@
 * {
-    padding: 0rem;
-    margin: 0rem;
-    box-sizing: border-box;
-}
-/* header {
-    
-} */
-body {
-    background-color: #47576a; 
-    position: relative;
-    height: 200vh;
-    color: black;
-    font-family: monospace;
-    background-image: conic-gradient(from 0deg, orange, orangered, orange);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    /* background-color: orange; */
-    position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.transparent {
-    width: 1470px;
-    height: 700px;
-    background-color: transparent;
-    position: absolute;
-    background-image:linear-gradient(to top, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.8) 100%),url(..//Netflix-Clone/images/bg.jpg);
-    z-index: 1.1;
-    top: 0rem;
+.main {
+  /* background-image: url(janmesh-shah-kb1Wg_uVaYU-unsplash.jpg); */
+  /* background-image: url("./Images/WhatsApp\ Image\ 2024-08-01\ at\ 1.58.14\ AM.jpeg"); */
+  background-image: url("./Images/landingBg.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  position: relative;
+  background-size: max(1200px, 100vw);
 }
 
-header {
-    width: 100%;
-    height: 5rem;
+.main .box {
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  height: 550px;
+  opacity: 0.4;
+  top: 0;
 }
-main {
-    width: 100%;
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 20px;
+  /* background-color: #ffffff; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  max-width: 1426;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
-.top{
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 70px;
-    z-index: 1.1;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    border-bottom: 3px solid white;
+
+.auth-buttons {
+  margin-right: -350px;
+  display: flex;
+  gap: 10px;
 }
-.top li {
-    display: flex;
-    margin-right: 4rem;
-    justify-content: center;
+
+.btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.sign-in {
+  background: linear-gradient(45deg, #0062e6, #33aeff);
+}
+
+.sign-up {
+  background: linear-gradient(45deg, #ffffff, #85e085);
+  color: #0062e6;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
+}
+
+.language-select {
+  display: flex;
+  align-items: center;
+}
+
+.language-dropdown {
+  position: relative;
+  left: 170px;
+  bottom: 50px;
+  padding: 12px 18px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.language-dropdown:hover {
+  border-color: #0062e6;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.button-container {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+
+  margin: auto;
+}
+.slog {
+  color: white;
+  font-size: large;
+  position: relative;
+  bottom: 10px;
+  z-index: 10;
+}
+.book-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6f61, #d56b6b);
+  border-radius: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.book-button:hover {
+  background: linear-gradient(45deg, #d56b6b, #ff6f61);
+  transform: translateY(-2px);
+}
+
+.book-button:active {
+  background: linear-gradient(45deg, #d56b6b, #ff6f61);
+  transform: translateY(2px);
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  footer {
+    max-width: 90vw;
+    padding: 75px 0;
+  }
+
+  .footer-item {
     align-items: center;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
 }
-.options ul{
-    display: flex;
+
+.footer a {
+  font-size: 14px;
+  color: white;
 }
-.options ul li img{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 0;
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
 }
-.options svg {
-    width: 32px;
-    height: 32px;
+
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
 }
-.train svg {
-    width: 45px;
-    height: 60px;
-    margin-top: 0rem;
+
+/* Login/SignUp */
+
+.formContainer {
+  width: 30%;
+  height: 65%;
+  position: absolute;
+  top: 1rem;
+  margin: auto;
+  border-radius: 10px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  
 }
-li {
-    list-style-type: none;
+.formContainer div,
+.loginOrSignup button {
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 40px;
+  height: 3rem;
+  border: none;
+  font-size: 1.25rem;
 }
-svg marker {
-    color: white;
+
+.login form {
+  margin-top: 6rem;
 }
-/* .login {
-    margin-left: 54rem;
-} */
- .lang {
-    position: absolute;
-    right: 1rem;
- }
- .login {
-    position: absolute;
-    right: 11rem;
- }
-.login button {
-    outline: none;
-    cursor: pointer;
-    border: none;
-    padding: 0.9rem 2rem;
-    margin: 0;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: 17px;
-    border-radius: 500px;
-    overflow: hidden;
-    background: #66ff66;
-    color: ghostwhite;
+.login div {
+  position: absolute;
+  left: 12rem;
+  font-size: 2rem;
 }
-.login button span {
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
+.login {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
-.login button:hover span {
-    color: black;
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  line-height: 0rem;
 }
-.login button::before,
-.login button::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+.formContainer .LOGIN div {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
 }
-.login button::before {
-    content: "";
-    background-color: rgb(3, 3, 208);
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+.formContainer form {
+  display: flex;
+  flex-flow: column nowrap;
 }
-.login button:hover::before {
-    transform: translate3d(100%, 0, 0);
+
+.formContainer input {
+  height: 3rem;
+  width: 20rem;
+  /* border: 0.1px solid grey;
+    border-radius: 5px; */
 }
-                       /* Language Button  */
-.lang button {
-    outline: none;
-    cursor: pointer;
-    border: none;
-    padding: 0.9rem 2rem;
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: 17px;
-    border-radius: 500px;
-    overflow: hidden;
-    background: #66ff66;
-    color: ghostwhite;
+.formContainer span {
+  font-weight: 900;
+  font-size: 2rem;
 }
-.lang button span {
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
+.forgot {
+  color: #0000ee;
+  margin-top: 1rem;
 }
-.lang button:hover span {
-    color: black;
+.sign-up,
+.log-in {
+  color: #0000ee;
 }
-.lang button::before,
-.lang button::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+.forgot,
+.sign-up:hover,
+.log-in:hover {
+  cursor: pointer;
 }
-.lang button::before {
-    content: "";
-    background-color: orange;
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+.Login button {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 20px;
+  border: none;
+  background-color: blue;
+  color: white;
 }
-.lang button:hover::before {
-    transform: translate3d(100%, 0, 0);
+.forgot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.lang button {
-    width: 7rem;
-    height: 3rem;
-    border-radius: 7px;
-    border: 0.5px solid black;
-    background-color: transparent;
-    border: none;
-    color: black;
-    background-color: rgb(24, 252, 176);
+.formContainer .SIGNUP div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
 }
-                /* fromTo Body  */
- main {
-    position: absolute;
-    z-index: 1.9;
- }
- .fromTo {
-    margin-top: 0.2rem;
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
+.SIGNUP span {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
-.fa-solid {
-    margin-top: 3.5rem;
-    font-size: 2.5rem;
+.SIGNUP div {
+  margin-bottom: 1rem;
 }
-.fromToBody {
-    background-color: white;
-    border-radius: 10px;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    margin-top: 1rem;
+
+.forgotPass {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
-select {
-    border: none;
+.forgotPass div {
+  margin-bottom: 2rem;
 }
-.From,.To {
-    margin-top: 1rem;
-    height: 18%;
-    outline: 0.25px solid grey;
-    outline-offset: 0.2rem;
-    padding: 1rem;
+.or,
+.validate,
+.option1,
+.option2 {
+  text-align: center;
 }
-#from,#to {
-    width: 14rem;
-    height: 3rem;
-    font-size: 1.2rem;
+.submitDetail {
+  text-align: center;
+}
+.submitDetail button {
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  background-color: blue;
+  border-radius: 10px;
 }
