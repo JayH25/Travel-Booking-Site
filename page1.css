@@ -57,12 +57,14 @@
 
 .sign-in {
   background: linear-gradient(45deg, #0062e6, #33aeff);
+  position: absolute;
+  top: 1.5rem;
 }
 
-.sign-up {
+/* .sign-up {
   background: linear-gradient(45deg, #ffffff, #85e085);
   color: #0062e6;
-}
+} */
 
 .btn:hover {
   transform: translateY(-3px);
@@ -110,6 +112,7 @@
 
   margin: auto;
 }
+
 .slog {
   color: white;
   font-size: large;
@@ -171,9 +174,12 @@
   max-width: 60vw;
   margin: 34px auto;
   cursor: pointer;
+  margin-bottom: 0rem;
+  /* margin-top: 0rem; */
 }
 
 footer {
+  width: 100%;
   color: white;
   max-width: 60vw;
   margin: auto;
@@ -181,13 +187,16 @@ footer {
 }
 
 footer .questions {
-  padding: 34px 0;
+  /* padding: 34px 0; */
+  margin-top: 0rem;
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 6rem;
   color: white;
+  margin-top: 5rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -223,6 +232,7 @@ footer .questions {
   background-color: rgb(46, 44, 44);
   position: relative;
   z-index: 20;
+  /* margin-top: 1rem; */
 }
 
 /* Login/SignUp */
@@ -358,4 +368,75 @@ footer .questions {
   border: none;
   background-color: blue;
   border-radius: 10px;
+}
+
+.seperate {
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  font-size: 1.15rem;
+  font-weight: 100;
+}
+                          /* Link section At last */
+.highlight {
+  font-weight: 900;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.fourth {
+  margin-bottom: 1rem;
+
+}
+.footer-item {
+  list-style-type: none;
+}
+.footer-item li {
+  line-height: 0.5rem;
+  font-weight: 1;
+  
+}
+
+.footer-item a {
+  text-decoration: none;
+}
+.footer-item a:hover {
+  text-decoration: underline;
+}
+/* .line {
+  background-color: rgb(118, 117, 117);
+  width: 100vw;
+  height: 1px;
+  margin-top: 3rem;
+  margin-left: 0rem;
+  position: absolute;
+  left: 0rem;
+} */
+.footer2 {
+  margin-top: 6rem;
+  background-color: white;
+  height: 10vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+}
+.trans {
+  animation-name: ani;
+  animation-duration: 0.4s;
+  /* animation-delay: 1s; */
+}
+
+@keyframes ani {
+  25% {
+    padding-top: 2rem;
+    
+  }
+  /* 50% {
+    padding-top: 2rem;
+  }
+  75% {
+    padding-top: 1rem;
+  } */
+  100% {
+    padding: 24px;
+  }
+  
 }
