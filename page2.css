@@ -1,4 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
+    font-family: "Poppins", sans-serif;
     padding:0px;
     margin:0px;
 }
@@ -35,9 +40,8 @@
 }
 
 .fromto{
+    margin-top: 2%;
     position:relative;
-    bottom:50px;
-    background-color: red;
     height:120px;
     width:60%;
     left:20%;
@@ -45,8 +49,7 @@
     display:flex;
     justify-content:space-around;
     align-items:center;
-    border:2px solid rgb(212, 211, 211);
-    border-radius:8px;
+    
 } 
 
 
@@ -75,13 +78,249 @@ select{
     margin:0px;
     padding:0px;
 }
-button{
+main button{
     color:azure;
     position:relative;
     bottom: 70px;
     height:45px;
-    width:170px;
-    margin-left:46.5%;
+    width:8%;
+    margin-left:46%;
     background-color: rgb(37, 37, 37);
     border-radius: 20px;
 }
+.selectors{
+    position:relative;
+    background-color: white;
+    left:15%;
+    right:15%;
+    width:70%;
+    bottom:50px;
+    border:2px solid rgb(212, 211, 211);
+    border-radius: 8px;
+}
+.details{
+    margin-top: 65px;
+    margin-bottom: 15px;
+    position:relative;
+    bottom:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+input[type="date"]{
+    background-color:whitesmoke;
+    margin-left: 2%;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Roboto Condensed", sans-serif;
+    width:170px;
+}
+main a{
+    position:absolute;
+    color:white;
+    font-weight: bold;
+    font-size: large;
+    z-index: 1;
+    margin-left:13%;
+    margin-top: 1%;
+    text-decoration: none;
+}
+.sign-in{
+    position:absolute;
+    top:7px;
+    right:2.5%;
+    background-color: white;
+    color: black;
+}
+
+                                /* Login/SignUp button */
+
+.auth-buttons {
+margin-right: -350px;
+display: flex;
+gap: 10px;
+}
+.btn {
+padding: 12px 28px;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+font-weight: bold;
+color: #ffffff;
+transition: all 0.3s ease;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+width: 10rem;
+}
+.btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+filter: brightness(1.1);
+}
+.sign-in {
+background: linear-gradient(45deg, #0062e6, #33aeff);
+/* background-color: red; */
+position: absolute;
+top: 3.5rem;
+z-index: 4;
+}
+
+/* Login / SignUp page */
+.formContainer {
+    width: 30%;
+    height: 65%;
+    position: absolute;
+    top: 1rem;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    
+  }
+  .formContainer div,
+  .loginOrSignup button {
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 40px;
+    height: 3rem;
+    border: none;
+    font-size: 1.25rem;
+  }
+  .LOGIN form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .login form {
+    margin-top: 6rem;
+  }
+  .login div {
+    position: absolute;
+    left: 12rem;
+    font-size: 2rem;
+
+  }
+  .login {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .close {
+    color: black;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    line-height: 0rem;
+  }
+  .formContainer .LOGIN div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  /* .login {
+    margin-top: 1rem;
+  } */
+  .formContainer form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .formContainer input {
+    height: 3rem;
+    width: 20rem;
+    /* border: 0.1px solid grey;
+      border-radius: 5px; */
+  }
+  .formContainer span {
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .forgot {
+    color: #0000ee;
+    margin-top: 1rem;
+  }
+  .sign-up,
+  .log-in {
+    color: #0000ee;
+  }
+  .forgot,
+  .sign-up:hover,
+  .log-in:hover {
+    cursor: pointer;
+  }
+  .Login button {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+  }
+  .forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formContainer .SIGNUP div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+  }
+  .SIGNUP span {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .SIGNUP div {
+    margin-bottom: 1rem;
+  }
+  
+  .forgotPass {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .forgotPass div {
+    margin-bottom: 2rem;
+  }
+  .or,
+  .validate,
+  .option1,
+  .option2 {
+    text-align: center;
+  }
+  .submitDetail {
+    text-align: center;
+  }
+  .submitDetail button {
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color: blue;
+    border-radius: 10px;
+  }
+  .hello {
+    transform: rotate(-90deg);
+    transition: transform 0.3 ease;
+    transition-duration: 0.5s;
+  }
+  .seperate {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    font-size: 1.15rem;
+    font-weight: 100;
+  }
+  .forgot {
+    display: block;
+  }

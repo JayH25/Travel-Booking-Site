@@ -3,16 +3,95 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Booking Page</title>
         <link rel="stylesheet" href="page2.css">
     </head>
+    <dialog class="formContainer">
+        <button class="close">x</button>
+        <section class="LOGIN">
+      
+          <div>
+            <span>Log In</span>
+          </div>
+          <form>
+            <div class="email">
+              <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="password">
+              <input type="password" name="password" id="password" placeholder="password">
+            </div>
+            <div class="forgot">
+              <p>Forgot Password ??</p>
+            </div>
+            <div class="Login">
+              <button>Login</button>
+            </div>
+            <div class="noAccount">
+              <p>Dont't have an account? <a class="sign-up">Sign Up</a></p>
+            </div>
+          </form>
+        </section>
+      
+        <section class="SIGNUP">
+          <!-- <button class="close">x</button> -->
+          <div>
+            <span>Sign Up</span>
+          </div>
+          <form>
+            <div class="email">
+              <input type="email" name="email1" id="email1" placeholder="Email">
+            </div>
+            <div class="password">
+              <input type="password" name="password1" id="password1" placeholder="Create Password">
+            </div>
+            <div class="password">
+              <input type="password" name="password2" id="password2" placeholder="Confirm Password">
+            </div>
+            <!-- <div class="forgot">
+                    <p>Forgot Password ??</p>
+                </div> -->
+            <div class="Login">
+              <button>Signup</button>
+            </div>
+            <div class="noAccount">
+              <p>Already have an Account? <a class="log-in">Login</a></p>
+            </div>
+          </form>
+        </section>
+      
+        <section class="forgotPass">
+          <div class="validate">
+            <span>Validate Account</span>
+          </div>
+          <div class="option1">
+            <input type="email" placeholder="Email">
+          </div>
+          <div class="or">
+            <span>OR</span>
+          </div>
+          <div class="option2">
+            <input type="number" placeholder="phone No.">
+          </div>
+          <div class="submitDetail">
+            <button>Submit</button>
+          </div>
+        </section>
+      
+      
+      
+    </dialog>
     <body>
         
-        <body>
+        <main>
+            <a href="./page1.html">HOME</a>
+            <div class="auth-buttons">
+                <button class="btn sign-in">LogIn / SignUp</button>
+            </div>
             <div class="background"></div>
             <div class="box">
-                <img id="logo" src="./images/logo.jpeg">
+                <img id="logo" src="./images/logo.png">
             </div>
+            <div class="selectors">
             <div class="fromto">
                 <select id="from">
                     <option value="null">Select City</option>
@@ -20,7 +99,7 @@
                     <option value="Surat">Surat</option>
                     <option vlaue="Jaipur">Jaipur</option>
                 </select>
-                <img src="./Images/reverse.jpeg" width="30px" height="30px">
+                <img src="./Images/reverse.png" width="30px" height="30px">
                 <select id="to">
                     <option value="null">Select Destination</option>
                     <option value="Gwalior">Gwalior</option>
@@ -28,10 +107,15 @@
                     <option vlaue="Jaipur">Jaipur</option>
                 </select>
             </div>
+            <div class="details">
+                <h2>Select Date of Travel :</h2>
+                <input type="date">
+            </div>
+            </div>
             <button>SEARCH</button>
                 
             
-            </body>
+        </main>
     </body>
     <script src="file2.js"></script>
 </html>
