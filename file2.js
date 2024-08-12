@@ -46,3 +46,58 @@ forgot.addEventListener('click' , () => {
     
     console.log("displaying");
 })
+
+
+function showSelectors(option, element) {
+    // Hide all selector boxes
+    document.getElementById('bus-selectors').style.display = 'none';
+    document.getElementById('train-selectors').style.display = 'none';
+    document.getElementById('flight-selectors').style.display = 'none';
+
+    const options = document.querySelectorAll('.option');
+    options.forEach(opt => opt.classList.remove('active'));
+
+    if (option === 'bus') {
+        document.getElementById('bus-selectors').style.display = 'flex';
+    } else if (option === 'train') {
+        document.getElementById('train-selectors').style.display = 'flex';
+    } else if (option === 'flight') {
+        document.getElementById('flight-selectors').style.display = 'flex';
+    }
+
+    element.classList.add('active');
+
+}
+
+window.onload = function() {
+    showSelectors('bus', document.getElementById('bus-option'));
+};
+
+function swapCitiestr() {
+    const fromCity = document.getElementById('from-train');
+    const toCity = document.getElementById('to-train');
+
+    const tempValue = fromCity.value;
+    fromCity.value = toCity.value;
+    toCity.value = tempValue;
+}
+
+function swapCitiesfl() {
+    const fromCity = document.getElementById('from-flight');
+    const toCity = document.getElementById('to-flight');
+
+    const tempValue = fromCity.value;
+    fromCity.value = toCity.value;
+    toCity.value = tempValue;
+}
+
+function swapCitiesbus() {
+    const fromCity = document.getElementById('from-bus');
+    const toCity = document.getElementById('to-bus');
+
+    const tempValue = fromCity.value;
+    fromCity.value = toCity.value;
+    toCity.value = tempValue;
+}
+
+document.querySelector("imgbus").addEventListener('click',swapCitiesbus())

@@ -54,8 +54,8 @@
 /* Login / SignUp page */
 
 .formContainer {
-  width: 30%;
-  height: 65%;
+  width: 70%;
+  height: 66%;
   position: absolute;
   top: 1rem;
   margin: auto;
@@ -64,8 +64,33 @@
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
   position: fixed;
-  
 }
+.content {
+  
+  display: flex;
+  flex-flow: row nowrap;
+}
+.loginImage  {
+  height: 500px;
+  width: 500px;
+  display: flex;
+}
+.loginImage img {
+  margin-top: 1rem;
+  border-radius: 10px;
+  margin-left: -2rem;
+  /* box-shadow: 4px 4px 4px 4px rgb(64, 63, 63); */
+  box-shadow: 4px 4px 4px 4px rgb(109, 109, 109);
+}
+.welcome {
+  display: flex;
+  flex-flow: column nowrap;
+}
+/* .line {
+  width: 2px;
+  height: 100rem;
+  background-color: black;
+} */
 .formContainer div,
 .loginOrSignup button {
   margin: auto;
@@ -98,6 +123,9 @@
   background-color: transparent;
   font-size: 2rem;
   line-height: 0rem;
+}
+.close:hover {
+  opacity: 0.7;
 }
 .formContainer .LOGIN div {
   display: flex;
@@ -456,23 +484,8 @@ footer .questions {
 .footer-item a:hover {
   text-decoration: underline;
 }
-/* .line {
-  background-color: rgb(118, 117, 117);
-  width: 100vw;
-  height: 1px;
-  margin-top: 3rem;
-  margin-left: 0rem;
-  position: absolute;
-  left: 0rem;
-} */
-.footer2 {
-  margin-top: 6rem;
-  background-color: white;
-  height: 10vh;
-  width: 100vw;
-  position: absolute;
-  left: 0;
-}
+
+
 .trans {
   animation-name: ani;
   animation-duration: 0.4s;
@@ -495,7 +508,7 @@ footer .questions {
   }
   
 }
-
+                        /* Most visited places section  */
 
 .mostVisit {
   height: 30rem;
@@ -555,33 +568,6 @@ footer .questions {
   padding: 3rem;
 }
 
-/* .img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9 {
-  padding: 1rem;
-} */
-                              
-/* #left , #right {
-  width: 4rem;
-  height: 4rem;
-  margin: auto;
-  position: absolute;
-  z-index: 1.9;
-  background-color: white;
-  
-}
-#left {
-  left: 0rem;
-  top: 45rem;
-  margin-left: 1.5rem;
-
-}
-#right {
-  right: 0rem;
-  top: 45rem;
-  margin-right: 1.5rem;
-}
-#left:hover,#right:hover {
-  opacity: 0.5;
-} */
 #left,#right {
   width: 4rem;
   height: 4rem;
@@ -604,8 +590,8 @@ footer .questions {
   display: flex;
   flex-flow: row nowrap;
   width: 100vw;
-  
 }
+
 
                               /* Book Tickets button styling */
 .images button {
@@ -648,3 +634,50 @@ footer .questions {
 .images button:hover::before {
   width: 100%;
 }
+.footer2 {
+  margin-top: 4rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer2 span {
+  width: 13rem;
+  /* display: block; */
+  font-size: 3rem;
+  margin: auto;
+}
+.media {
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: center;
+  align-items: center; */
+  font-size: 1rem;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.media svg:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.followUs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.leftLine , .rightLine {
+  height: 3px;
+  width: 30rem;
+  background-color: grey;
+}
+.leftLine {
+  margin-right: 0.5rem;
+}
+.rightLine {
+  margin-left: 0.5rem;
+}
+
+
+
